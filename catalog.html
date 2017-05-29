@@ -9,12 +9,12 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__logo">
-      <a href="index.html">
-        <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип">
-      </a>
-    </div>
     <nav class="main-nav">
+      <div class="page-header__logo">
+        <a href="">
+          <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип">
+        </a>
+      </div>
       <span class="main-nav__toggler"><span></span></span>
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -33,14 +33,14 @@
     </nav>
   </header>
   <main class="main-content">
-    <section class="goods-catalog">
-      <h1 class="goods-catalog__headline">Каталог товаров</h1>
-      <div class="goods-catalog__wrap">
+    <section class="catalog">
+      <h1 class="catalog__headline">Каталог товаров</h1>
+      <div class="catalog__wrap">
         <div class="good-card">
-          <a class="good-card__good-link" href="#"><img src="http://placehold.it/260х195" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
-          <a class="good-card__good-name" href="#">Зайчик-попрыгайчик</a>
-          <p class="good-card__good-descr">Рост 30 см, вес 200 г</p>
-          <div class="good-card__price-block">
+          <a class="good-card__link" href="#"><img src="http://placehold.it/260х195" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
+          <a class="good-card__name" href="#">Зайчик-попрыгайчик</a>
+          <p class="good-card__descr">Рост 30 см, вес 200 г</p>
+          <div class="good-card__price-wrap">
             <p class="good-card__price">1 200 руб.</p>
             <a class="good-card__basket" href="#"></a>
           </div>
@@ -96,7 +96,7 @@
         <section class="production-process">
           <h2 class="production-process__headline">Процесс производства</h2>
           <div class="production-process__video">
-            <div class="play-btn"></div>
+            <video width="260" height="150" poster="img/"></video>
           </div>
           <p class="production-process__video-descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a href="" class="production-process__order-btn">Сделать заказ</a>
@@ -104,10 +104,10 @@
       </div>
     </section>
     <footer class="page-footer">
-      <div class="page-footer__footer-social">
-        <a class="page-footer__social-vk  page-footer__social-btn" href="#"></a>
-        <a class="page-footer__social-fb  page-footer__social-btn" href="#"></a>
-        <a class="page-footer__social-inst  page-footer__ social-btn" href="#"></a>
+      <div class="social">
+        <a class="social-link  social-link--inst" href="#"></a>
+        <a class="social-link  social-link--fb" href="#"></a>
+        <a class="social-link  social-link--tw" href="#"></a>
       </div>
       <section class="develop-block">
         <h2 class="develop-block__headline">Разработано</h2>
