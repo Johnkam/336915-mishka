@@ -9,7 +9,7 @@
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <div class="page-header__logo">
+      <div class="main-nav__logo">
         <a href="">
           <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип">
         </a>
@@ -105,7 +105,7 @@
       <a class="btn" href="#">Напишите нам</a>
     </section>
     <footer class="page-footer">
-      <div class="social">
+      <div class="page-footer__social">
         <a class="social-link  social-link--inst" href="#"></a>
         <a class="social-link  social-link--fb" href="#"></a>
         <a class="social-link  social-link--tw" href="#"></a>
@@ -118,13 +118,22 @@
     <section class="popup-add-to-basket">
       <form class="popup-add-to-basket__form" action="#" method="get">
         <h2 class="popup-add-to-basket__headline">Добавить в корзину</h2>
-        <p class="popup-add-to-basket__character_type">Выберите размер</p>
-        <ul class="popup-add-to-basket__character_type-items">
-          <li><a class="popup-add-to-basket__item  popup-add-to-basket__item--selected" href="#">s</a></li>
-          <li><a class="popup-add-to-basket__item" href="#">m</a></li>
-          <li><a class="popup-add-to-basket__item" href="#">l</a></li>
+        <p class="popup-add-to-basket__prompt">Выберите размер</p>
+        <ul class="popup-add-to-basket__items-list">
+          <li class="popup-add-to-basket__item">
+            <label class="popup-add-to-basket__item-name" for="s-size">s</label>
+            <input class="popup-add-to-basket__item-switch" id="s-size" type="radio" name="character_type">
+          </li>
+          <li class="popup-add-to-basket__item">
+            <label class="popup-add-to-basket__item-name" for="m-size">m</label>
+            <input class="popup-add-to-basket__item-switch" id="m-size" type="radio" name="character_type">
+          </li>
+          <li class="popup-add-to-basket__item">
+            <label class="popup-add-to-basket__item-name" for="l-size">l</label>
+            <input class="popup-add-to-basket__item-switch" id="l-size" type="radio" name="character_type">
+          </li>
         </ul>
-        <button class="btn  btn--bg-green" type="button">Добавить</button>
+        <input class="btn  btn--bg-green" type="submit" value="Добавить">
       </form>
     </section>
   </main>

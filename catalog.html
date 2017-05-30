@@ -10,7 +10,7 @@
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <div class="page-header__logo">
+      <div class="main-nav__logo">
         <a href="">
           <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип">
         </a>
@@ -82,16 +82,6 @@
             <p class="good-card__price">1 500 руб.</p>
             <a class="good-card__basket" href="#"></a>
           </div>
-          <section class="popup-add-to-basket">
-            <h2 class="popup-add-to-basket__headline">Добавить в корзину</h2>
-            <p class="popup-add-to-basket__size-choice">Выберите размер</p>
-            <ul class="popup-add-to-basket__size-choice-item">
-              <li><a class="popup-add-to-basket__size  popup-add-to-basket__size--selected" href="#">s</a></li>
-              <li><a class="popup-add-to-basket__size" href="#">m</a></li>
-              <li><a class="popup-add-to-basket__size" href="#">l</a></li>
-            </ul>
-            <button class="add-to-basket-btn" type="button">Добавить</button>
-          </section>
         </div>
         <section class="production-process">
           <h2 class="production-process__headline">Процесс производства</h2>
@@ -104,7 +94,7 @@
       </div>
     </section>
     <footer class="page-footer">
-      <div class="social">
+      <div class="page-footer__social">
         <a class="social-link  social-link--inst" href="#"></a>
         <a class="social-link  social-link--fb" href="#"></a>
         <a class="social-link  social-link--tw" href="#"></a>
@@ -114,6 +104,27 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="develop-block__logo-link"></a>
       </section>
     </footer>
+    <section class="popup-add-to-basket">
+      <form class="popup-add-to-basket__form" action="#" method="get">
+        <h2 class="popup-add-to-basket__headline">Добавить в корзину</h2>
+        <p class="popup-add-to-basket__prompt">Выберите размер</p>
+        <ul class="popup-add-to-basket__items-list">
+          <li class="popup-add-to-basket__item">
+            <label class="popup-add-to-basket__item-name" for="s-size">s</label>
+            <input class="popup-add-to-basket__item-switch" id="s-size" type="radio" name="character_type">
+          </li>
+          <li class="popup-add-to-basket__item">
+            <label class="popup-add-to-basket__item-name" for="m-size">m</label>
+            <input class="popup-add-to-basket__item-switch" id="m-size" type="radio" name="character_type">
+          </li>
+          <li class="popup-add-to-basket__item">
+            <label class="popup-add-to-basket__item-name" for="l-size">l</label>
+            <input class="popup-add-to-basket__item-switch" id="l-size" type="radio" name="character_type">
+          </li>
+        </ul>
+        <input class="btn  btn--bg-green" type="submit" value="Добавить">
+      </form>
+    </section>
   </main>
 </body>
 
