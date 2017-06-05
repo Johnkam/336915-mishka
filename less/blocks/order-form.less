@@ -1,0 +1,38 @@
+.order-form__headline {
+  background-color: @bg-color-headline;
+}
+.order-form__headline-text {
+  .font-bold();
+  .font-type(27px, 30px, @text-color-main);
+}
+.order-form__descr {
+  .font-type(13px, 24px, @text-color-second);
+}
+.order-form__section-name {
+  .font-bold();
+  .font-type(17px, 16px, @text-color-light);
+  text-transform: uppercase;
+}
+.order-form__radio-label,
+.order-form__checkbox-label,
+.order-form__label-for-name {
+  .font-bold();
+  .font-type(17px, 18px, @text-color-main);
+}
+.order-form__for-placeholder::-webkit-input-placeholder {
+  .font-type(17px, 18px, @text-color-second);
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    .font-type(17px, 18px, @text-color-second);
+  }
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    .font-type(17px, 18px, @text-color-second);
+  }
+  &:-ms-input-placeholder {
+    .font-type(17px, 18px, @text-color-second);
+  }
+}
+.order-form__footnote {
+  .font-type(14px, 16px, @text-color-second);
+}

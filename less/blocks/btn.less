@@ -1,0 +1,39 @@
+.btn {
+  box-sizing: border-box;
+  display: block;
+  width: 260px;
+  text-decoration: none;
+  .font-bold();
+  .font-type(17px, 20px, @text-color-second);
+  text-transform: uppercase;
+  border: 2px solid @text-color-second;
+  padding: 14px 83px;
+
+  &--write-us {
+    padding: 14px 49px;
+  }
+
+  &--bg-green {
+    padding: 14px 80px;
+    color: @text-color-lightest;
+    background-color: @bg-color-page-menu;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &--make-order {
+    width: 196px;
+    line-height: 16px;
+    padding: 14px 23px;
+  }
+
+  &--send-order {
+    padding: 14px 44px;
+    background: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+}
+
