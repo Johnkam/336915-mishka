@@ -1,0 +1,32 @@
+.reviews__headline {
+  .font-bold();
+  .font-type(25px, 30px, @text-color-main);
+}
+.reviews__text {
+  .font-type(15px, 30px, @text-color-second);
+}
+.reviews__author {
+  .font-bold();
+  .font-type(17px, 24px, @text-color-main);
+}
+.reviews__nickname {
+  .font-type(17px, 30px, @text-color-second);
+}
+.reviews__arrow {
+  display: block;
+  width: 130px;
+  height: 52px;
+  border: 1px solid #ececec;
+
+  &--preview {
+    background-image: url("../../img/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--next {
+    background-image: url("../../img/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}

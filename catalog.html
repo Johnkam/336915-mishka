@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Mishka</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог товаров</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,72 +14,54 @@
     <nav class="main-nav">
       <div class="main-nav__logo">
         <a href="">
-          <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
         </a>
       </div>
       <span class="main-nav__toggler"><span></span></span>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="#">Каталог товаров</a>
+          <a class="main-nav__link" href="#">Каталог товаров</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">Вязание на заказ</a>
+          <a class="main-nav__link" href="#">Вязание на заказ</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">Поиск по сайту</a>
+          <a class="main-nav__link  main-nav__link--bg-search" href="#">Поиск по сайту</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">Корзина: пока пуста</a>
+          <a class="main-nav__link  main-nav__link--bg-basket" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="main-content">
     <section class="catalog">
-      <h1 class="catalog__headline">Каталог товаров</h1>
+      <div class="catalog__headline">
+        <h1 class="catalog__headline-text">Каталог товаров</h1>
+      </div>
       <div class="catalog__wrap">
         <div class="good-card">
-          <a class="good-card__link" href="#"><img src="http://placehold.it/260х195" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
+          <a class="good-card__foto" href="#"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
           <a class="good-card__name" href="#">Зайчик-попрыгайчик</a>
           <p class="good-card__descr">Рост 30 см, вес 200 г</p>
           <div class="good-card__price-wrap">
             <p class="good-card__price">1 200 руб.</p>
-            <a class="good-card__basket" href="#"></a>
+
           </div>
-          <section class="popup-add-to-basket">
-            <h2 class="popup-add-to-basket__headline">Добавить в корзину</h2>
-            <p class="popup-add-to-basket__size-choice">Выберите размер</p>
-            <ul class="popup-add-to-basket__size-choice-item">
-              <li><a class="popup-add-to-basket__size  popup-add-to-basket__size--selected" href="#">s</a></li>
-              <li><a class="popup-add-to-basket__size" href="#">m</a></li>
-              <li><a class="popup-add-to-basket__size" href="#">l</a></li>
-            </ul>
-            <button class="add-to-basket-btn" type="button">Добавить</button>
-          </section>
         </div>
         <div class="good-card">
-          <a class="good-card__good-link" href="#"><img src="http://placehold.it/260х195" width="260" height="195" alt="Корзинка для белья"></a>
-          <a class="good-card__good-name" href="#">Корзинка для белья</a>
-          <p class="good-card__good-descr">Диаметр 15 см, высота 10 см</p>
+          <a class="good-card__foto" href="#"><img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья"></a>
+          <a class="good-card__name" href="#">Корзинка для белья</a>
+          <p class="good-card__descr">Диаметр 15 см, высота 10 см</p>
           <div class="good-card__price-block">
             <p class="good-card__price">690 руб.</p>
             <a class="good-card__basket" href="#"></a>
           </div>
-          <section class="popup-add-to-basket">
-            <h2 class="popup-add-to-basket__headline">Добавить в корзину</h2>
-            <p class="popup-add-to-basket__size-choice">Выберите размер</p>
-            <ul class="popup-add-to-basket__size-choice-item">
-              <li><a class="popup-add-to-basket__size  popup-add-to-basket__size--selected" href="#">s</a></li>
-              <li><a class="popup-add-to-basket__size" href="#">m</a></li>
-              <li><a class="popup-add-to-basket__size" href="#">l</a></li>
-            </ul>
-            <button class="add-to-basket-btn" type="button">Добавить</button>
-          </section>
         </div>
         <div class="good-card">
-          <a class="good-card__good-link" href="#"><img src="http://placehold.it/260х195" width="260" height="195" alt="Большая корзинка для игрушек"></a>
-          <a class="good-card__good-name" href="#">Большая корзинка для игрушек</a>
-          <p class="good-card__good-descr">Диаметр 30 см, высота 30 см</p>
+          <a class="good-card__foto" href="#"><img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек"></a>
+          <a class="good-card__name" href="#">Большая корзинка для игрушек</a>
+          <p class="good-card__descr">Диаметр 30 см, высота 30 см</p>
           <div class="good-card__price-block">
             <p class="good-card__price">1 500 руб.</p>
             <a class="good-card__basket" href="#"></a>
@@ -89,43 +73,43 @@
             <video width="260" height="150" poster="img/"></video>
           </div>
           <p class="production-process__video-descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a href="" class="production-process__order-btn">Сделать заказ</a>
+          <a href="" class="btn btn--smaller">Сделать заказ</a>
         </section>
       </div>
     </section>
-    <footer class="page-footer">
-      <div class="page-footer__social">
-        <a class="social-link  social-link--inst" href="#"></a>
-        <a class="social-link  social-link--fb" href="#"></a>
-        <a class="social-link  social-link--tw" href="#"></a>
-      </div>
-      <section class="develop-block">
-        <h2 class="develop-block__headline">Разработано</h2>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="develop-block__logo-link"></a>
-      </section>
-    </footer>
-    <section class="popup-add-to-basket">
-      <form class="popup-add-to-basket__form" action="#" method="get">
-        <h2 class="popup-add-to-basket__headline">Добавить в корзину</h2>
-        <p class="popup-add-to-basket__prompt">Выберите размер</p>
-        <ul class="popup-add-to-basket__items-list">
-          <li class="popup-add-to-basket__item">
-            <label class="popup-add-to-basket__item-name" for="s-size">s</label>
-            <input class="popup-add-to-basket__item-switch" id="s-size" type="radio" name="character_type">
-          </li>
-          <li class="popup-add-to-basket__item">
-            <label class="popup-add-to-basket__item-name" for="m-size">m</label>
-            <input class="popup-add-to-basket__item-switch" id="m-size" type="radio" name="character_type">
-          </li>
-          <li class="popup-add-to-basket__item">
-            <label class="popup-add-to-basket__item-name" for="l-size">l</label>
-            <input class="popup-add-to-basket__item-switch" id="l-size" type="radio" name="character_type">
-          </li>
-        </ul>
-        <input class="btn  btn--bg-green" type="submit" value="Добавить">
-      </form>
-    </section>
   </main>
+  <footer class="page-footer">
+    <div class="page-footer__social">
+      <a class="social-link  social-link--inst" href="#"></a>
+      <a class="social-link  social-link--fb" href="#"></a>
+      <a class="social-link  social-link--tw" href="#"></a>
+    </div>
+    <section class="develop-block">
+      <h2 class="develop-block__headline">Разработано</h2>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="develop-block__logo-link"></a>
+    </section>
+  </footer>
+  <section class="popup-add-to-basket">
+    <form class="popup-add-to-basket__form" action="#" method="get">
+      <h2 class="popup-add-to-basket__headline">Добавить в корзину</h2>
+      <p class="popup-add-to-basket__prompt">Выберите размер</p>
+      <ul class="popup-add-to-basket__items-list">
+        <li class="popup-add-to-basket__item">
+          <label class="popup-add-to-basket__item-name" for="s-size">s</label>
+          <input class="popup-add-to-basket__item-switch" id="s-size" type="radio" name="character_type">
+        </li>
+        <li class="popup-add-to-basket__item">
+          <label class="popup-add-to-basket__item-name" for="m-size">m</label>
+          <input class="popup-add-to-basket__item-switch" id="m-size" type="radio" name="character_type">
+        </li>
+        <li class="popup-add-to-basket__item">
+          <label class="popup-add-to-basket__item-name" for="l-size">l</label>
+          <input class="popup-add-to-basket__item-switch" id="l-size" type="radio" name="character_type">
+        </li>
+      </ul>
+      <input class="btn  btn--bg-green" type="submit" value="Добавить">
+    </form>
+  </section>
 </body>
 
 </html>
