@@ -3,11 +3,6 @@
   width: 260px;
   height: 195px;
   background-color: #e8e8ea;
-
-  img {
-    width: 260px;
-    height: 195px;
-  }
 }
 .good-card__name {
   .font-bold();
@@ -16,6 +11,9 @@
 }
 .good-card__descr {
   .font-type(13px, 30px, @text-color-second);
+}
+.good-card__price-block {
+  display: flex;
 }
 .good-card__price {
   .font-bold();
@@ -26,4 +24,18 @@
   width: 21px;
   height: 19px;
   background: url(../../img/icon-cart.svg);
+}
+@media @tablet-widths {
+
+  .good-card {
+    display: flex;
+  }
+}
+
+@media @desktop-widths {
+
+  .good-card {
+    display: flex;
+    flex-direction: column;
+  }
 }

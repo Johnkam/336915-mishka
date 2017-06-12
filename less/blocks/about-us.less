@@ -36,3 +36,30 @@
   background-image: url("../../img/icon-feature-6.svg");
   background-repeat: no-repeat;
 }
+@media @tablet-widths {
+
+  .about-us__points-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-us__points-list div:first-child {
+    width: 205px;
+  }
+
+  .about-us__points-list div:last-child {
+    width: 250px;
+  }
+}
+
+@media @desktop-widths {
+
+  .about-us__headline {
+    margin-left: 175px;
+  }
+
+  .about-us__points-list {
+    width: 700px;
+    margin: 0 auto;
+  }
+}

@@ -2,6 +2,52 @@
   .font-bold();
   .font-type(18px, 30px, @text-color-main);
 }
-.contacts__table-cell {
+.contacts__item {
   .font-type(15px, 30px, @text-color-second);
+  list-style: none;
+}
+.contacts__e-mail {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.contacts__adress {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.contacts__adress .contacts__item:last-child {
+  width: 145px;
+  margin-left: 33px;
+}
+
+@media @tablet-widths {
+
+  .contacts__wrapper {
+    display: flex;
+  }
+
+  .contacts__e-mail {
+    width: 280px;
+    margin-right: 50px;
+  }
+
+  .contacts__adress .contacts__item:last-child {
+    width: 176px;
+  }
+}
+
+@media @desktop-widths {
+
+  .contacts__wrapper {
+    flex-direction: column;
+    margin-left: 175px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
+  .contacts__headline {
+    margin-left: 175px;
+  }
 }

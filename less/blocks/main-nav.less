@@ -1,3 +1,56 @@
+.main-nav__logo-wrapper {
+  position: relative;
+  .container();
+  display: flex;
+  min-height: 79px;
+}
+.main-nav__logo {
+  width: 86px;
+  height: 35px;
+  margin: auto;
+}
+.main-nav_goods-catalog,
+.main-nav__order-knitting {
+  margin: auto 0;
+}
+.main-nav_goods-catalog a,
+.main-nav__order-knitting a {
+  .font-bold();
+  .font-type(17px, 24px, @text-color-main);
+  text-decoration: none;
+}
+.main-nav__basket-link {
+  margin: auto 0;
+}
+.main-nav__basket-link a {
+  .font-bold();
+  .font-type(17px, 24px, @text-color-main);
+  text-decoration: none;
+}
+.main-nav__search-icon a {
+  display: block;
+  width: 83px;
+  height: 88px;
+  background-image: url(../../img/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+}
+.main-nav__toggler {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: block;
+  width: 20px;
+  height: 14px;
+  background-image: url(../../img/icon-menu-open.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.main-nav__list {
+  display: none;
+}
 .main-nav__item {
   list-style: none;
 }
@@ -14,4 +67,67 @@
 .main-nav__link--bg-basket {
   background: url(../../img/icon-cart.svg);
   background-repeat: no-repeat;
+}
+
+@media @mobile-widths {
+
+  .main-nav_goods-catalog {
+    display: none;
+  }
+
+  .main-nav__order-knitting {
+    display: none;
+  }
+
+  .main-nav__search-icon {
+    display: none;
+  }
+
+  .main-nav__basket-link {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+
+  .main-nav__logo-wrapper {
+    justify-content: space-between;
+  }
+
+  .main-nav__logo {
+    margin: auto 0;
+  }
+
+  .main-nav__toggler {
+    display: none;
+  }
+
+  .main-nav__logo-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media @tablet-widths-only {
+
+  .main-nav_goods-catalog {
+    display: none;
+  }
+
+  .main-nav__order-knitting {
+    display: none;
+  }
+}
+
+@media @desktop-widths {
+
+  .main-nav__logo-wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .page-header__headline-menu li:nth-child(1),
+  .page-header__headline-menu li:nth-child(2) {
+    display: none;
+  }
 }
