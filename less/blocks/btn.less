@@ -8,11 +8,9 @@
   text-transform: uppercase;
   border: 2px solid @text-color-second;
   padding: 14px 83px;
-
   &--write-us {
     padding: 14px 49px;
   }
-
   &--bg-green {
     padding: 14px 80px;
     color: @text-color-lightest;
@@ -21,17 +19,34 @@
     outline: none;
     cursor: pointer;
   }
-
   &--smaller {
     width: 196px;
     line-height: 16px;
     padding: 14px 23px;
   }
-
   &--send-order {
     padding: 14px 44px;
     background: none;
     outline: none;
     cursor: pointer;
+  }
+}
+@media @tablet-widths {
+
+  .btn--smaller {
+    width: 584px;
+    margin: 0 auto;
+    padding-left: 216px;
+    padding-right: 216px;
+  }
+}
+
+@media @desktop-widths {
+
+  .btn--smaller {
+    width: 230px;
+    margin: 0 auto;
+    padding-left: 41px;
+    padding-right: 41px;
   }
 }

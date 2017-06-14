@@ -5,19 +5,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог товаров</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <div class="main-nav__logo">
-        <a href="">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
-        </a>
+      <div class="main-nav__logo-wrapper">
+        <div class="main-nav_goods-catalog">
+          <a href="#">Каталог товаров</a>
+        </div>
+        <div class="main-nav__order-knitting">
+          <a href="#">Вязание на заказ</a>
+        </div>
+        <div class="main-nav__logo">
+          <a href="">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
+          </a>
+        </div>
+        <div class="main-nav__search-icon">
+          <a href="#"></a>
+        </div>
+        <div class="main-nav__basket-link">
+          <a href="#">Корзина: пока пуста</a>
+        </div>
+        <span class="main-nav__toggler"><span></span></span>
       </div>
-      <span class="main-nav__toggler"><span></span></span>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">Каталог товаров</a>
@@ -33,61 +46,97 @@
         </li>
       </ul>
     </nav>
+    <section class="page-header__headline  page-header__headline--bg-color">
+      <div class="page-header__container">
+        <ul class="page-header__headline-menu">
+          <li>
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li>
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li>
+            <a href="#">Новые поступления</a>
+          </li>
+          <li>
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
+        <p class="page-header__free-delivery">Бесплатная доставка по России </p>
+      </div>
+      <h1 class="page-header__headline-text">Каталог товаров</h1>
+    </section>
   </header>
   <main class="main-content">
     <section class="catalog">
-      <div class="catalog__headline">
-        <h1 class="catalog__headline-text">Каталог товаров</h1>
-      </div>
       <div class="catalog__wrap">
         <div class="good-card">
           <a class="good-card__foto" href="#"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
-          <a class="good-card__name" href="#">Зайчик-попрыгайчик</a>
-          <p class="good-card__descr">Рост 30 см, вес 200 г</p>
-          <div class="good-card__price-wrap">
-            <p class="good-card__price">1 200 руб.</p>
-
+          <div class="good-card__container">
+            <a class="good-card__name" href="#">Зайчик-попрыгайчик</a>
+            <p class="good-card__descr">Рост 30 см, вес 200 г</p>
+            <div class="good-card__price-block">
+              <p class="good-card__price">1 200 руб.</p>
+              <a class="good-card__basket" href="#"></a>
+            </div>
           </div>
         </div>
         <div class="good-card">
           <a class="good-card__foto" href="#"><img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья"></a>
-          <a class="good-card__name" href="#">Корзинка для белья</a>
-          <p class="good-card__descr">Диаметр 15 см, высота 10 см</p>
-          <div class="good-card__price-block">
-            <p class="good-card__price">690 руб.</p>
-            <a class="good-card__basket" href="#"></a>
+          <div class="good-card__container">
+            <a class="good-card__name" href="#">Корзинка для белья</a>
+            <p class="good-card__descr">Диаметр 15 см, высота 10 см</p>
+            <div class="good-card__price-block">
+              <p class="good-card__price">690 руб.</p>
+              <a class="good-card__basket" href="#"></a>
+            </div>
           </div>
         </div>
         <div class="good-card">
           <a class="good-card__foto" href="#"><img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек"></a>
-          <a class="good-card__name" href="#">Большая корзинка для игрушек</a>
-          <p class="good-card__descr">Диаметр 30 см, высота 30 см</p>
-          <div class="good-card__price-block">
-            <p class="good-card__price">1 500 руб.</p>
-            <a class="good-card__basket" href="#"></a>
+          <div class="good-card__container">
+            <a class="good-card__name" href="#">Большая корзинка для игрушек</a>
+            <p class="good-card__descr">Диаметр 30 см, высота 30 см</p>
+            <div class="good-card__price-block">
+              <p class="good-card__price">1 500 руб.</p>
+              <a class="good-card__basket" href="#"></a>
+            </div>
           </div>
         </div>
-        <section class="production-process">
-          <h2 class="production-process__headline">Процесс производства</h2>
-          <div class="production-process__video">
-            <video width="260" height="150" poster="img/"></video>
-          </div>
-          <p class="production-process__video-descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a href="" class="btn btn--smaller">Сделать заказ</a>
-        </section>
+      </div>
+    </section>
+    <section class="production-process">
+      <div class="production-process__wrapper">
+        <h2 class="production-process__headline">Процесс производства</h2>
+        <div class="production-process__video">
+          <video width="260" height="150" poster="img/"></video>
+        </div>
+        <p class="production-process__video-descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a href="" class="btn btn--smaller  production-process__btn">Сделать заказ</a>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__social">
-      <a class="social-link  social-link--inst" href="#"></a>
-      <a class="social-link  social-link--fb" href="#"></a>
-      <a class="social-link  social-link--tw" href="#"></a>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <a href="index.html">
+          <img src="img/logo-footer.png" width="102" height="34" alt="Логотип">
+        </a>
+      </div>
+      <div class="page-footer__social">
+        <div class="page-footer__social-wrapper">
+          <a class="social-link  social-link--inst" href="#"></a>
+          <a class="social-link  social-link--fb" href="#"></a>
+          <a class="social-link  social-link--tw" href="#"></a>
+        </div>
+      </div>
+      <section class="develop-block  page-footer__develop-block">
+        <div class="develop-block__develop-wrapper">
+          <h2 class="develop-block__headline">Разработано</h2>
+          <a class="develop-block_logo-link" href="img/logo-htmlacademy.svg" width="27" height="35"></a>
+        </div>
+      </section>
     </div>
-    <section class="develop-block">
-      <h2 class="develop-block__headline">Разработано</h2>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="develop-block__logo-link"></a>
-    </section>
   </footer>
   <section class="popup-add-to-basket">
     <form class="popup-add-to-basket__form" action="#" method="get">

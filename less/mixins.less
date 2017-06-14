@@ -1,5 +1,18 @@
-//Шрифты
+//Container for center position
+.container() {
+  width: 320px;
+  margin: 0 auto;
 
+  @media @tablet-widths {
+    width: 768px;
+  }
+
+  @media @desktop-widths {
+    width: 1150px;
+  }
+}
+
+//Print
 .font-bold() {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: bold;
