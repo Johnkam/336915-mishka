@@ -2,36 +2,88 @@
   .container();
 }
 .page-menu__item {
-  display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 21px;
+  padding-bottom: 21px;
   .font-bold();
   .font-type(19px, 24px, @text-color-lightest);
   text-decoration: none;
 }
-.page-menu__item span {
-  display: block;
-  width: 105px;
+.page-menu__interrior-object {
+  padding-left: 30px;
+  padding-right: 36px;
+}
+.page-menu__toys {
+  padding-left: 30px;
+  padding-right: 27px;
 }
 .page-menu__item--bg-lightgreeen {
-  background-image: url("../img/icon-interior.svg");
-  background-position: 90% 50%;
-  background-repeat: no-repeat;
   background-color: @bg-color-page-menu;
+
+  &:hover {
+    background-color: #59d5bc;
+
+    .page-menu__icon-interrior-object {
+      fill: #29a592;
+    }
+  }
+
+  &:active {
+    color: #8be2d0;
+    background-color: #59d5bc;
+
+    .page-menu__icon-interrior-object {
+      fill: #44c0aa;
+    }
+  }
 }
 .page-menu__item--bg-darkgreeen {
-  background-image: url("../img/icon-toy.svg");
-  background-position: 90% 50%;
-  background-repeat: no-repeat;
   background-color: @bg-color-page-menu--darken;
-}
 
+  &:hover {
+    background-color: #46c1ae;
+
+    .page-menu__icon-toys path {
+      fill: #239f8e;
+    }
+  }
+
+  &:active {
+    color: #7ed4c6;
+    background-color: #46c1ae;
+
+    .page-menu__icon-toys path {
+      fill: #37b2a0;
+    }
+  }
+}
+.page-menu__item span {
+  width: 105px;
+  margin: auto 0;
+}
 @media @tablet-widths {
 
   .page-header__page-menu {
+    position: relative;
     padding-left: 50px;
     padding-right: 50px;
+
+    &:before {
+      content: "";
+      width: 768px;
+      height: 24px;
+      background-image: url("../img/zigzag-fill-desktop.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      position: absolute;
+      top: 81px;
+      left: 0;
+    }
+  }
+
+  .page-menu__item {
+  .font-type(20px, 30px, @text-color-lightest);
   }
 }
 
@@ -40,5 +92,14 @@
   .page-header__page-menu {
     padding-left: 100px;
     padding-right: 100px;
+
+    &:before {
+      content: "";
+      width: 768px;
+      height: 24px;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+    }
   }
 }
