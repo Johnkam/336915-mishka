@@ -3,22 +3,44 @@
 }
 .develop-block__develop-wrapper {
   display: flex;
-  width: 190px;
-  justify-content: space-between;
+  width: 260px;
+  justify-content: space-around;
   align-items: center;
   margin: auto;
-  padding-top: 23px;
+  padding-top: 11px;
   padding-bottom: 23px;
+  border-top: 1px solid #e5e5e5;
 }
 .develop-block__headline {
+  margin-left: 20px;
+  margin-right: 28px;
   .font-bold();
   .font-type(19px, 18px, @text-color-main);
+  
 }
-.develop-block_logo-link {
-  display: block;
-  width: 27px;
-  height: 35px;
-  background: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.develop-block__logo-link {
+  display: flex;
+  width: 221px;
+  text-decoration: none;
+}
+.develop-block__logo-link svg {
+  margin-top: 11px;
+  fill: #63d1bb;
+}
+
+.develop-block__logo-link:hover svg {
+    fill: #46c1ae;
+  }
+.develop-block__logo-link:active {
+    opacity: 0.3;
+  }
+
+@media @tablet-widths {
+  
+  .develop-block__develop-wrapper {
+    width: 204px;
+    border: none;
+    padding-left: 50px;
+    padding-top: 19px;
+  }
 }

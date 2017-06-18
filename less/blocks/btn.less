@@ -10,6 +10,7 @@
   padding: 14px 83px;
   &--write-us {
     padding: 14px 49px;
+    font-size: 18px;
   }
   &--bg-green {
     padding: 14px 80px;
@@ -31,13 +32,37 @@
     cursor: pointer;
   }
 }
+.btn {
+  
+  &:hover {
+    background-color: @bg-color-btn--hover;
+    color: #ffffff;
+  }
+  
+  &:active {
+    color: #8d8d8d;
+  }
+}
 @media @tablet-widths {
+  
+  .btn {
+    width: 292px;
+    padding-left: 99px;
+    padding-right: 99px;
+  }
 
   .btn--smaller {
     width: 584px;
     margin: 0 auto;
     padding-left: 216px;
     padding-right: 216px;
+  }
+  
+  .btn--write-us {
+    width: 230px;
+    padding-left: 38px;
+    padding-right: 38px;
+    font-size: 17px;
   }
 }
 

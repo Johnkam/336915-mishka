@@ -4,19 +4,24 @@
 .page-menu__item {
   display: flex;
   justify-content: space-between;
-  padding-top: 21px;
-  padding-bottom: 21px;
   .font-bold();
   .font-type(19px, 24px, @text-color-lightest);
   text-decoration: none;
 }
 .page-menu__interrior-object {
   padding-left: 30px;
-  padding-right: 36px;
+  padding-right: 34px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+}
+.page-menu__icon-interrior-object {
+  margin-top: 6px;
 }
 .page-menu__toys {
   padding-left: 30px;
   padding-right: 27px;
+  padding-top: 17px;
+  padding-bottom: 25px;
 }
 .page-menu__item--bg-lightgreeen {
   background-color: @bg-color-page-menu;
@@ -62,44 +67,40 @@
   width: 105px;
   margin: auto 0;
 }
+
 @media @tablet-widths {
 
-  .page-header__page-menu {
-    position: relative;
-    padding-left: 50px;
-    padding-right: 50px;
-
-    &:before {
-      content: "";
-      width: 768px;
-      height: 24px;
-      background-image: url();
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      position: absolute;
-      top: 81px;
-      left: 0;
-    }
-  }
-
   .page-menu__item {
-  .font-type(20px, 30px, @text-color-lightest);
+    flex-grow: 1;
+    .font-type(20px, 30px, @text-color-lightest);
   }
-}
-
-@media @desktop-widths {
-
-  .page-header__page-menu {
-    padding-left: 100px;
-    padding-right: 100px;
-
-    &:before {
-      content: "";
-      width: 768px;
-      height: 24px;
-      background-image: url("../img/zigzag-fill-desktop.svg");
-      background-repeat: no-repeat;
-      position: absolute;
-    }
+  
+  .page-menu__interrior-object {
+    position: relative;
+    padding-top: 26px;
+    padding-bottom: 29px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .page-menu__icon-interrior-object {
+    margin-top: 0;
+  }
+  
+  .page-menu__toys {
+    position: relative;
+    padding-top: 26px;
+    padding-bottom: 29px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  .page-menu__interrior-object svg {
+    position: absolute;
+    top: 29px;
+    right: 36px;
+  }
+  .page-menu__toys svg {
+     position: absolute;
+    top: 31px;
+    right: 33px;
   }
 }

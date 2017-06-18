@@ -4,18 +4,33 @@
 }
 .main-content__btn {
   margin: 0 auto;
-  margin-top: 43px;
+  margin-top: 39px;
   margin-bottom: 39px;
 }
+ .main-content__zigzag-line {
+    width: 1150px;
+    margin: 0 auto;
+  }
 
 @media @tablet-widths {
 
   .main-content__wrapper {
     padding: 0 50px;
   }
+  
+  .main-content__btn {
+  margin-top: 55px;
+  margin-bottom: 57px;
+}
 }
 
 @media @desktop-widths {
+  
+  .main-content {
+    position: relative;
+    width: 1250px;
+    margin: 0 auto;
+  }
 
   .main-content__about-us {
     .container();
@@ -28,5 +43,17 @@
 
   .main-content__btn {
     margin-left: 275px;
+    margin-bottom: 106px;
+  }
+  
+  .main-content__zigzag-line {
+    width: 1050px;
+    margin: 0 auto;
+  }
+  
+  .main-content__zigzag-line svg {
+    width: 100%;
+    margin-top: 71px;
+    transform: rotate(180deg);
   }
 }

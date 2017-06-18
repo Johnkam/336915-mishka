@@ -1,4 +1,6 @@
 .about-us__headline {
+  margin-top: 54px;
+  margin-bottom: 30px;
   .font-bold();
   .font-type(25px, 30px, @text-color-main);
 }
@@ -9,34 +11,56 @@
 .about-us__points {
   .font-bold();
   .font-type(17px, 20px, @text-color-main);
-  padding-top: 60px;
   list-style: none;
 }
-.about-us__points:nth-child(1) {
-  background-image: url("../img/icon-feature-1.svg");
-  background-repeat: no-repeat;
+ .about-us__icon-features {
+  fill: #63d1bb;
+  margin-bottom: 10px;
 }
-.about-us__points:nth-child(2) {
-  background-image: url("../img/icon-feature-3.svg");
-  background-repeat: no-repeat;
+.about-us__points-group1 .about-us__icon-features:nth-of-type(1) {
+  margin-left: 7px;
+  margin-bottom: 13px;
 }
-.about-us__points:nth-child(3) {
-  background-image: url("../img/icon-feature-5.svg");
-  background-repeat: no-repeat;
+.about-us__points-group1 .about-us__icon-features:nth-of-type(2) {
+  margin-left: 0;
+  margin-top: 31px;
+  margin-bottom: 23px;
 }
-.about-us__points:nth-child(4) {
-  background-image: url("../img/icon-feature-2.svg");
-  background-repeat: no-repeat;
+.about-us__points-group1 .about-us__icon-features:nth-of-type(3) {
+  margin-left: 8px;
+  margin-top: 35px;
+  margin-bottom: 16px;
 }
-.about-us__points:nth-child(5) {
-  background-image: url("../img/icon-feature-4.svg");
-  background-repeat: no-repeat;
+.about-us__points-group2 .about-us__icon-features:nth-of-type(1) {
+  margin-left: 4px;
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
-.about-us__points:nth-child(6) {
-  background-image: url("../img/icon-feature-6.svg");
-  background-repeat: no-repeat;
+.about-us__points-group2 .about-us__icon-features:nth-of-type(2) {
+  margin-left: -6px;
+  margin-top: 33px;
+  margin-bottom: 23px;
+}
+.about-us__points-group2 .about-us__icon-features:nth-of-type(3) {
+  margin-left: 3px;
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
 @media @tablet-widths {
+  
+  .about-us__advantages {
+    padding-top: 21px;
+  }
+  
+  .about-us__headline {
+  margin-bottom: 48px;
+  .font-type(43px, 50px, @text-color-main);
+}
+  
+  .about-us__points {
+    margin-bottom: 29px;
+    .font-type(20px, 22px, @text-color-main);
+  }
 
   .about-us__points-list {
     display: flex;
@@ -50,16 +74,46 @@
   .about-us__points-list div:last-child {
     width: 250px;
   }
+  
+  .about-us__points-list div:first-child {
+    width: 250px;
+  }
+  
+  .about-us__points-list div:last-child  {
+    width: 310px;
+  }
+  
+  .about-us__points-group2 .about-us__icon-features:nth-of-type(1) {
+    margin: 0;
+    margin-bottom: 17px;
+  }
+  
+  .about-us__points-list div:last-child {
+    margin-right: 22px;
+  }
 }
 
 @media @desktop-widths {
 
   .about-us__headline {
-    margin-left: 175px;
+    margin-left: 170px;
+    margin-top: 37px;
+    .font-type(53px, 57px, @text-color-main)
   }
 
   .about-us__points-list {
     width: 700px;
     margin: 0 auto;
+  }
+  
+  .about-us__points-list div:last-child {
+    margin-right: 38px;
+  }
+  
+  reviews__headline, 
+  .reviews__text, 
+  .reviews__author, 
+  .reviews__nickname {
+    margin-left: 225px;
   }
 }
