@@ -8,11 +8,10 @@
   background-repeat: no-repeat;
   background-position: 50% 20%;
   border-top: 1px solid #ececec;
-  
-  @media 	@retina {
-      background-image: url("../img/hero-mobile@2x.jpg");
-      background-size: 575px 373px;
-   }
+  @media @retina {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px 373px;
+  }
 }
 .page-header__headline--bg-color {
   background-image: none;
@@ -22,21 +21,20 @@
   margin: auto;
   margin-top: 70px;
   .font-bold();
- .font-type(27px, 30px, @text-color-main);
-  }
+  .font-type(27px,
+  30px,
+  @text-color-main);
+}
 .page-header__page-menu {
   .container();
 }
-
 @media @tablet-widths {
-
   .page-header__page-menu {
     display: flex;
     position: relative;
     margin-top: -117px;
     padding-left: 0;
     padding-right: 0;
-
     &:before {
       content: "";
       width: 768px;
@@ -50,7 +48,6 @@
       z-index: 10;
     }
   }
-  
   .page-header__headline-container {
     width: 768px;
     margin: 0 auto;
@@ -60,37 +57,34 @@
     border-top: 1px solid #e7e7e7;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: 50% 3%;
-    
-      @media 	@retina {
-        background-image: url("../img/hero-desktop@2x.jpg");
-        background-size: 1150px 746px;
-   }
+    @media @retina {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1150px 746px;
+    }
   }
- 
   .page-header__headline {
     width: 511px;
-   .font-type(43px, 50px, @text-color-main);
+    .font-type(43px,
+    50px,
+    @text-color-main);
   }
 }
-
 @media @desktop-widths {
-  
   .page-header__headline-container {
     width: 1250px;
     margin-top: -41px;
     background-image: url("../img/hero-desktop@2x.jpg");
     background-size: 1250px 746px;
   }
-  
   .page-header__headline {
     width: 626px;
-    .font-type(53px, 57px, @text-color-main);
+    .font-type(53px,
+    57px,
+    @text-color-main);
   }
-
   .page-header__page-menu {
     padding-left: 100px;
     padding-right: 100px;
-
     &:before {
       content: "";
       width: 1250px;
@@ -100,4 +94,3 @@
     }
   }
 }
-  

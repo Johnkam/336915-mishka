@@ -15,7 +15,7 @@
   display: none;
 }
 .reviews__author {
-   margin-top: 2px;
+  margin-top: 2px;
   .font-bold();
   .font-type(17px, 24px, @text-color-main);
 }
@@ -43,7 +43,6 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  
   &:hover {
     opacity: 0.6;
   }
@@ -51,7 +50,6 @@
     opacity: 0.3;
   }
 }
-
 @media @tablet-widths {
   .reviews {
     position: relative;
@@ -61,38 +59,34 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 93%;
-    
     @media @retina {
       background-image: url("../img/review@2x.jpg");
       background-size: 525px 636px;
     }
   }
-
   .reviews__headline {
     margin-top: 0;
     margin-bottom: 50px;
     margin-left: 50px;
-    .font-type(43px, 50px, @text-color-main);
+    .font-type(43px,
+    50px,
+    @text-color-main);
   }
-
   .reviews__text {
     width: 643px;
     margin-bottom: 57px;
     margin-left: 50px;
     font-size: 17px;
   }
-
   .reviews__nav {
     position: absolute;
     top: 410px;
     right: 0;
   }
-
   .reviews__arrow {
     width: 88px;
     border: none;
   }
-
   .reviews__btn {
     position: absolute;
     width: 175px;
@@ -101,56 +95,49 @@
     padding-left: 37px;
     padding-right: 40px;
   }
-  
   .reviews__author {
     margin-left: 50px;
-    .font-type(18px, 24px, @text-color-main);
+    .font-type(18px,
+    24px,
+    @text-color-main);
     font-style: normal;
   }
-  
   .reviews__nickname {
     margin-left: 50px;
     line-height: 30px;
     padding-bottom: 50px;
   }
 }
-
 @media @desktop-widths {
-  
   .reviews {
     padding-bottom: 14px;
     background-position: 50px 61px;
   }
-
   .reviews__headline,
   .reviews__text,
   .reviews__author,
   .reviews__nickname {
     margin-left: 219px;
   }
-
   .reviews__text {
     width: 778px;
     margin-bottom: 39px;
   }
-  
   .reviews__text br {
     display: block;
-}
-
+  }
   .reviews__nav {
     top: 264px;
   }
-  
   .reviews__headline {
     margin-bottom: 48px;
-    .font-type(53px, 57px, @text-color-main);
+    .font-type(53px,
+    57px,
+    @text-color-main);
   }
-  
   .reviews__author {
     font-size: 17px;
   }
-  
   .reviews__btn {
     padding-left: 37px;
     padding-right: 40px;
@@ -159,7 +146,6 @@
     top: 139px;
     width: 175px;
   }
-  
   .reviews__nav {
     top: 367px;
     right: -384px;
