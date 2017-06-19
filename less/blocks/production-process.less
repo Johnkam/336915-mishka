@@ -2,8 +2,11 @@
   .container();
   padding-left: 30px;
   padding-right: 30px;
+
 }
 .production-process__headline {
+  margin: 0;
+  padding: 30px 42px 26px 90px;
   .font-bold();
   .font-type(17px, 24px, text-color-main);
   background-image: url(../img/icon-video.svg);
@@ -12,15 +15,27 @@
 .production-process__video {
   width: 260px;
   height: 150px;
+  margin-bottom: 34px;
   background-image: url(../img/video-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .production-process__video-descr {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0 34px;
   .font-type(13px, 24px, text-color-second);
 }
-
+.production-process__inner {
+  width: 260px;
+  margin-bottom: 58px;
+  padding-bottom: 33px;
+  border: 1px solid #ececec;
+}
+.production-process__btn {
+  margin: 0 auto;
+}
 @media @tablet-widths {
 
   .production-process__wrapper {

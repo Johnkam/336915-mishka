@@ -47,7 +47,7 @@
 @media @tablet-widths {
   .contacts {
     position: relative;
-    padding-top: 92px;
+    padding-top: 53px;
   }
   .contacts__wrapper {
     display: flex;
@@ -60,19 +60,24 @@
   .contacts__e-mail a {
     font-size: 17px;
   }
-  .contacts__icon-flag {
-    position: absolute;
-    top: 75px;
-    right: 3px;
-    display: block;
-  }
   .contacts__adress .contacts__item:last-child {
     width: 228px;
     margin-left: 28px;
   }
   .contacts__headline {
+    position: relative;
     margin-bottom: 47px;
     .font-type(43px, 50px, @text-color-main);
+  }
+  .contacts__headline::after {
+    content: "";
+    width: 47px;
+    height: 82px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
   }
   .contacts__item {
     font-size: 17px;
@@ -93,11 +98,13 @@
   }
   .contacts__headline {
     margin-left: 169px;
-    .font-type(53px, 57px, @text-color-main);
+    .font-type(53px,
+    57px,
+    @text-color-main);
   }
-  .contacts__icon-flag {
-    left: 63px;
-    top: 130px;
+  .contacts__headline::after {
+    top: -17px;
+    left: -98px;
   }
   .contacts__adress .contacts__item:last-child {
     margin-left: 24px;

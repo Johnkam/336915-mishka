@@ -3,7 +3,7 @@
 }
 .reviews__headline {
   margin-bottom: 25px;
-  margin-top: 55px;
+  margin-top: 0;
   .font-bold();
   .font-type(25px, 30px, @text-color-main);
 }
@@ -18,6 +18,7 @@
   margin-top: 2px;
   .font-bold();
   .font-type(17px, 24px, @text-color-main);
+  font-style: normal;
 }
 .reviews__nickname {
   margin-bottom: 28px;
@@ -53,7 +54,7 @@
 @media @tablet-widths {
   .reviews {
     position: relative;
-    padding-top: 131px;
+    padding-top: 158px;
     width: 718px;
     margin-left: -50px;
     background-image: url("../img/review@1x.jpg");
@@ -80,7 +81,7 @@
   }
   .reviews__nav {
     position: absolute;
-    top: 410px;
+    top: 437px;
     right: 0;
   }
   .reviews__arrow {
@@ -90,7 +91,7 @@
   .reviews__btn {
     position: absolute;
     width: 175px;
-    top: 133px;
+    top: 160px;
     right: 0;
     padding-left: 37px;
     padding-right: 40px;
@@ -110,8 +111,9 @@
 }
 @media @desktop-widths {
   .reviews {
+    padding-top: 160px;
     padding-bottom: 14px;
-    background-position: 50px 61px;
+    background-position: 50px 91px;
   }
   .reviews__headline,
   .reviews__text,
@@ -121,10 +123,8 @@
   }
   .reviews__text {
     width: 778px;
+    padding-right: 20px;
     margin-bottom: 39px;
-  }
-  .reviews__text br {
-    display: block;
   }
   .reviews__nav {
     top: 264px;
@@ -143,11 +143,11 @@
     padding-right: 40px;
     position: absolute;
     right: -383px;
-    top: 139px;
+    top: 168px;
     width: 175px;
   }
   .reviews__nav {
-    top: 367px;
+    top: 396px;
     right: -384px;
   }
 }

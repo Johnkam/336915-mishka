@@ -1,10 +1,10 @@
 .week-product {
   position: relative;
   .container();
-  padding: 0 30px;
+  padding: 28px 30px 27px;
 }
 .week-product__name {
-  margin-top: 29px;
+  margin-top: 0;
   margin-bottom: 0;
   .font-bold();
   .font-type(25px, 30px, @text-color-main);
@@ -76,6 +76,8 @@
   }
   .week-product {
     position: relative;
+    padding-top: 0;
+    padding-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -111,12 +113,14 @@
     right: 50px;
     width: 333px;
     height: 404px;
+    z-index: -1;
   }
 }
 @media @desktop-widths {
   .week-product {
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 0;
   }
   .week-product__container {
     flex-direction: row-reverse;

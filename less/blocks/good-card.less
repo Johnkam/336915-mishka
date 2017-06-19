@@ -1,21 +1,38 @@
+.good-card {
+  border: 1px solid #ededed;
+}
+.good-card__container {
+  padding-left: 27px;
+  padding-right: 27px;
+}
 .good-card__foto {
   display: block;
   width: 260px;
   height: 195px;
+  margin-bottom: 32px;
   background-color: #e8e8ea;
 }
 .good-card__name {
+  margin: 0;
+  margin-bottom: 18px;
   .font-bold();
   .font-type(17px, 24px, @text-color-main);
   text-decoration: none;
 }
 .good-card__descr {
+  margin: 0;
+  padding: 18px 0 26px;
   .font-type(13px, 30px, @text-color-second);
+  border-bottom: 1px solid #ededed;
 }
 .good-card__price-block {
   display: flex;
+  justify-content: space-between;
+  padding: 22px 0 32px;
+  display: flex;
 }
 .good-card__price {
+  margin: 0;
   .font-bold();
   .font-type(15px, 24px, @text-color-main);
 }
@@ -23,17 +40,13 @@
   display: block;
   width: 21px;
   height: 19px;
-  background: url(../img/icon-cart.svg);
 }
 @media @tablet-widths {
-
   .good-card {
     display: flex;
   }
 }
-
 @media @desktop-widths {
-
   .good-card {
     display: flex;
     flex-direction: column;
