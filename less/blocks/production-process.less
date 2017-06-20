@@ -2,28 +2,52 @@
   .container();
   padding-left: 30px;
   padding-right: 30px;
-
+  margin-bottom: 93px;
 }
 .production-process__headline {
   margin: 0;
-  padding: 30px 42px 26px 90px;
+  padding: 24px 42px 26px 90px;
   .font-bold();
   .font-type(17px, 24px, text-color-main);
   background-image: url(../img/icon-video.svg);
   background-repeat: no-repeat;
+  background-position: 33px 30px
 }
 .production-process__video {
+  position: relative;
   width: 260px;
   height: 150px;
-  margin-bottom: 34px;
+  margin-bottom: 26px;
   background-image: url(../img/video-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  &::before {
+    content: "";
+    width: 101px;
+    height: 77px;
+    position: absolute;
+    top: 36px;
+    left: 80px;
+    background-image: url(../img/icon-play.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 10;
+  }
+}
+.production-process__video::before:hover {
+  transform: scale(1.2);
+}
+.production-process__video::before:active {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+.production-process__video img {
+  width: 100%;
 }
 .production-process__video-descr {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   padding: 0 34px;
   .font-type(13px, 24px, text-color-second);
 }
@@ -41,36 +65,69 @@
   .production-process__wrapper {
     display: flex;
     flex-direction: column;
+    margin-bottom: 111px;
     padding-left: 50px;
     padding-right: 50px;
   }
 
   .production-process__video {
+    position: relative;
     order: -1;
     width: 668px;
     height: 455px;
+    &:before {
+      top: 185px;
+      left: 282px;
+    }
+  }
+  .production-process__headline {
+    font-size: 20px;
+    padding: 9px 42px 9px 106px;
+    background-position: 41px 6px;
+    margin-bottom: 25px;
+  }
+  .production-process__video-descr {
+    padding: 0 38px;
+    margin-bottom: 36px;
+    font-size: 15px;
+    line-height: 30px;
   }
 }
-
 @media @desktop-widths {
 
   .production-process__wrapper {
-    display: flex;
-    flex-direction: row;
-    padding-left: 50px;
+    display: block;
+    position: relative;
+    width: 335px;
+    min-height: 450px;
+    padding-left: 746px;
     padding-right: 50px;
   }
 
   .production-process__video {
+    position: absolute;
+    top: 0;
+    left: 43px;
     width: 682px;
     height: 455px;
   }
 
   .production-process__video-descr {
     width: 230px;
+    margin-bottom: 49px;
+    padding: 0 56px;
   }
 
   .production-process__btn {
     margin: 0;
+    margin-left: 58px;
+  }
+  .production-process__video::before {
+    left: 291px;
+    top: 189px;
+  }
+  .production-process__headline {
+    padding: 93px 42px 9px 56px;
+    background-position: 56px 40px;
   }
 }

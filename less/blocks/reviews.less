@@ -1,9 +1,22 @@
 .reviews {
+  position: relative;
   margin: 0;
+}
+.reviews::after {
+  content: "";
+  width: 1000%;
+  height: 23px;
+  position: absolute;
+  bottom: -67px;
+  left: -400px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 5px;
 }
 .reviews__headline {
   margin-bottom: 25px;
   margin-top: 0;
+  padding-right: 309px;
   .font-bold();
   .font-type(25px, 30px, @text-color-main);
 }
@@ -53,9 +66,9 @@
 }
 @media @tablet-widths {
   .reviews {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
     padding-top: 158px;
-    width: 718px;
     margin-left: -50px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -65,7 +78,11 @@
       background-size: 525px 636px;
     }
   }
+  .reviews::after {
+    background-size: auto 23px;
+}
   .reviews__headline {
+    order: 1;
     margin-top: 0;
     margin-bottom: 50px;
     margin-left: 50px;
@@ -74,29 +91,29 @@
     @text-color-main);
   }
   .reviews__text {
+    order: 3;
     width: 643px;
     margin-bottom: 57px;
     margin-left: 50px;
     font-size: 17px;
   }
   .reviews__nav {
-    position: absolute;
-    top: 437px;
-    right: 0;
+     order: 6;
   }
   .reviews__arrow {
     width: 88px;
     border: none;
   }
   .reviews__btn {
-    position: absolute;
+    order: 2;
+    align-self: flex-start;
     width: 175px;
-    top: 160px;
-    right: 0;
     padding-left: 37px;
     padding-right: 40px;
   }
   .reviews__author {
+    padding-right: 403px;
+    order: 4;
     margin-left: 50px;
     .font-type(18px,
     24px,
@@ -104,6 +121,7 @@
     font-style: normal;
   }
   .reviews__nickname {
+    order: 5;
     margin-left: 50px;
     line-height: 30px;
     padding-bottom: 50px;
@@ -115,6 +133,11 @@
     padding-bottom: 14px;
     background-position: 50px 91px;
   }
+  .reviews::after {
+    width: 1050px;
+    background-size: 1150px 23px;
+    left: 0;
+}
   .reviews__headline,
   .reviews__text,
   .reviews__author,
@@ -141,9 +164,6 @@
   .reviews__btn {
     padding-left: 37px;
     padding-right: 40px;
-    position: absolute;
-    right: -383px;
-    top: 168px;
     width: 175px;
   }
   .reviews__nav {
