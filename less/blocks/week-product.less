@@ -119,6 +119,11 @@
   .week-product__wrapper {
     width: 300px;
   }
+  .week-product::after {
+    left: -413px;
+    background-size: auto 20px;
+    bottom: -100px;
+  }
   .week-product__photo {
     position: absolute;
     top: 156px;
@@ -164,5 +169,12 @@
     top: 74px;
     right: 100px;
     z-index: -1;
+  }
+  .week-product::after {
+    left: 95px;
+    background-size: 1050px 20px;
+    width: 1050px;
+    bottom: -100px;
+    background-repeat: no-repeat;
   }
 }

@@ -1,6 +1,10 @@
 .main-nav__container {
   .container();
   position: relative;
+  width: 100%;
+}
+.main-nav {
+
 }
 .main-nav__toggler {
   width: 21px;
@@ -20,6 +24,8 @@
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+  width: 86px;
+  margin: 0 auto;
   &:hover {
     opacity: 0.6;
   }
@@ -73,7 +79,7 @@
 .main-nav__list {
   position: absolute;
   display: block;
-  width: 320px;
+  width: 100%;
   background-color: #ffffff;
 }
 .main-nav__user-block {
@@ -191,6 +197,7 @@
     font-size: 15px;
   }
   .main-nav__list {
+    width: 334px;
     display: flex;
     order: 1
   }
@@ -209,7 +216,7 @@
     display: block;
     order: 2;
     margin-top: 17px;
-    margin-left: 117px;
+    margin-left: 103px;
   }
 }
 @media @tablet-widths {
